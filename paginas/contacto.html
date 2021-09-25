@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="normalize.css"/>
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+   <header class="header">
+         <img class="header__logo" src="imagenes/logo.png" alt="logo" title="serendipia"> 
+       <nav class="header__nav">
+        <ul>
+           <li>
+              <a href="../index.html">
+                 Inicio
+              </a> 
+           </li>
+           <li>
+              <a href="servicios-promociones.html">
+                 Servicios & Promociones
+              </a>
+           </li>
+           <li>
+              <a href="nuestros-clientes.html">
+                 Nuestros Clientes
+              </a>
+           </li>
+           <li>
+              <a href="quienes-somos.html">
+                 Quienes Somos
+              </a>
+           </li>
+           <li>
+              <a href="contacto.html">
+                 Contacto
+              </a>
+           </li>
+        </ul> 
+       </nav>
+   </header> 
+   <main>
+       <form class="datos" method="POST" enctype="text/plain">
+         <fieldset class="datos__campo">
+            <legend class="datos__titulo">
+               Datos de contacto
+            </legend>
+            <label class="datos__items">Nombre/s</label>
+            <input class="datos__items" type="text" placeholder="Escribe tu nombre" required>
+            <label class="datos__items">Apellido/s</label>
+            <input class="datos__items" type="text" placeholder="Escribe tu apellido" required>
+            <label class="datos__items">E-mail</label>
+            <input class="datos__items" type="email" placeholder="name@example.com" required>
+            <label class="datos__items">Teléfono</label>
+            <input class="datos__items" type="tel" placeholder="1111111111">
+            <label class="datos__items">Servicio de interés</label>
+            <select>
+               <option value="fotoproducto">Fotoproducto</option>
+               <option value="publicidad">Publicidad</option>
+               <option value="interaccion">Interacción con clientes</option>
+            </select>
+            <label class="datos__items">Tu consulta</label>
+            <textarea placeholder="Dejanos un comentario"></textarea>
+            <label class="datos__items">¿Desea recibir promociones por mail?</label>
+            <input type="radio" id="si" name="promos">
+            <label for="si">¡De acuerdo!</label>
+            <input type="radio" id="no" name="promos">
+            <label for="no">¡No, gracias!</label>
+            <label class="datos__items">Acepto los términos y condiciones</label>
+            <input type="checkbox">
+            <br>
+            <input type="submit" placeholder="Enviar">
+            <input type="reset">
+         </fieldset>
+       </form>
+   </main>
+   <footer class="footer"> 
+      <nav class="footer__nav">
+          <ul>
+             <li>
+             <a href="https://www.instagram.com/serendipia.redes/">Instagram</a>
+             </li>
+             <li>
+             <a href="https://campsite.bio/serendipiaredes">Campsite</a>
+             </li>
+             <li>
+             <a href="https://www.behance.net/ornella-rossi">Behance</a>
+            </li>
+             <li>
+             <a href="https://ar.pinterest.com/lospinsdeserendipia/">Pinterest</a>
+             </li>
+             <li>
+             <a href="https://www.facebook.com/serendipiamktdigital">Facebook</a>
+             </li>
+        </ul>
+      </nav>
+   </footer>
+</body>
+</html>
