@@ -1,13 +1,13 @@
 /*Cambiar todo lo que pueda de unidades absolutas a relativas */
 
 body{
-    background-color: rgb(236, 192, 192);
+    background-color: rgb(206, 160, 170);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header{
     text-align: center;
-   background-image: linear-gradient(to left, pink, violet);
+    background-image: linear-gradient(to right, rgb(206, 160, 170), rgb(233, 194, 197), rgb(239, 244, 248), rgb(192, 211, 228), rgb(157, 176, 206), rgb(77, 88, 165));
 }
 
 
@@ -18,8 +18,6 @@ body{
 
 .header__nav{
     font-size:x-large;
-   /* color: rgb(111, 67, 180);
-    background-color: rgb(221, 160, 183);*/
     height: 100px;
     border-bottom: 2px solid rgb(78, 121, 199);
 }
@@ -27,8 +25,13 @@ body{
 .header__nav ul li{
     float: left;
     list-style: none;
-    margin: 35px;
-    color: rgb(111, 67, 180)
+    margin: 25px;
+}
+
+.header__nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
 }
 
 .servicios__imagenes{
@@ -63,12 +66,12 @@ body{
 }
 
 .promos{
-    margin: 10%;
-    width: 80%;
+    margin: 5%;
+    width: 90%;
 }
 
 .promos__tabla{
-    background-color: rgb(198, 150, 212);
+    background-color: rgb(157, 176, 206);
     text-align: left;
     border-collapse: collapse;
     width: 100%;
@@ -77,43 +80,41 @@ body{
 }
 
 .promos__tabla__titulo{
-    color: rgb(43, 122, 226);
+    color: rgb(84, 89, 121);
     font-size:xx-large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .promos__tabla th, td{
     padding: 20px;
 }
 
+.promos__tabla td:hover{
+    padding: 30px;
+}
+
 .promos__tabla__encabezados{
-    background-color: cornflowerblue;
+    background-color: rgb(84, 89, 121);
     border-bottom: solid 5px black;
     color: white;
+    text-transform: uppercase;
 }
 
 .promos__tabla__color{
-    background-color:rgb(221, 177, 235);
-}
-
-.recurso{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    background-color:rgb(192, 211, 228);
 }
 
 .recurso__titulo{
-    color: teal;
+    color: rgb(84, 89, 121);
     text-align: center;
     font-size:xx-large;
-}
-
-.recurso__imagen{
-    padding-left: 25%;
+    text-transform: uppercase;
 }
 
 .recurso__imagen img{
-    width: 550px;
+    width: 400px;
 }
 
 .recurso__texto{
@@ -133,21 +134,26 @@ body{
 
 .footer{
     border-top: 2px solid rgb(78, 121, 199);
-    background-image: linear-gradient(to left, pink, violet);
+    background-image: linear-gradient(to left, rgb(206, 160, 170), rgb(233, 194, 197), rgb(239, 244, 248), rgb(192, 211, 228), rgb(157, 176, 206), rgb(84, 89, 121));
 }
 
 .footer__nav{
     font-size:x-large;
-    color: rgb(111, 67, 180);
-    height: 100px;
+    height: 200px;
 }
 
 .footer__nav ul li{
     float:left;
     list-style: none;
-    margin-left: 10%;
-    margin-top: 2%;
+    margin-left: 8%;
+    margin-top: 7%;
     color: rgb(111, 67, 180)
+}
+
+.footer__nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
 }
 
 /*Servicios y promociones*/
@@ -180,14 +186,15 @@ body{
 .clientes__titulo{
     font-size: 80px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color:darkorchid;
+    color: rgb(77, 88, 165);
     text-align: center;
 }
 
 .clientes__identidad__subtitulo, .clientes__papeleria__subtitulo, .clientes__redes__subtitulo{
     font-size: 40px;
-    color: rgb(43, 122, 226);
+    color: rgb(84, 89, 121);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 5%;
 }
 
 .clientes__identidad__texto, .clientes__papeleria__texto, .clientes__redes__texto{
@@ -203,21 +210,16 @@ body{
 .grid{
     display: grid;
     grid-template-areas: 
-    "nav nav nav" 
     "img somos somos" 
     "section2 section2 section2" 
     "footer footer footer";
     grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 1fr 3fr 2.5fr 1fr;
+    grid-template-rows: 2.5fr 1.5fr 1fr;
     justify-content: space-around; /*no me lo lee*/
 }
 
 .grid div{
     padding-left: 25px;
-}
-
-.header__nav{
-    grid-area: nav;
 }
 
 .imagen img{
@@ -226,12 +228,13 @@ body{
 
 .imagen{
     grid-area: img;
+    margin-top: 10%;
 }
 
 .texto__titulo{
     font-size:xx-large;
     font-family: sans-serif;
-    color: darkmagenta;
+    color: rgb(77, 88, 165);
 }
 
 .letra{
@@ -242,6 +245,7 @@ body{
 
 .texto1{
     grid-area: somos;
+    margin-top: 10%;
 }
 
 .texto2{
@@ -252,7 +256,7 @@ body{
     grid-area: footer;
 }
 
-/* Contacto */
+/* Contacto 
 
 .datos{
     margin: 10%;
@@ -264,4 +268,15 @@ body{
 
 .datos__items{
     display: block;
+}*/
+form{
+    width: 80%;
+    margin: 5%;
+}
+
+.datos__titulo{
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5%;
+    text-align: center;
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="stylesheet" href="normalize.css"/>
     <link rel="stylesheet" href="estilos.css" />
 </head>
@@ -42,38 +43,54 @@
        </nav>
    </header> 
    <main>
+        <h1 class="datos__titulo">
+            Datos de contacto
+        </h1>
        <form class="datos" method="POST" enctype="text/plain">
-         <fieldset class="datos__campo">
-            <legend class="datos__titulo">
-               Datos de contacto
-            </legend>
-            <label class="datos__items">Nombre/s</label>
-            <input class="datos__items" type="text" placeholder="Escribe tu nombre" required>
-            <label class="datos__items">Apellido/s</label>
-            <input class="datos__items" type="text" placeholder="Escribe tu apellido" required>
-            <label class="datos__items">E-mail</label>
-            <input class="datos__items" type="email" placeholder="name@example.com" required>
-            <label class="datos__items">Teléfono</label>
-            <input class="datos__items" type="tel" placeholder="1111111111">
+         <div class="row">
+            <div class="col">
+               <label class="form-label">Nombre/s</label>
+               <input type="text" class="form-control" placeholder="Escribe tu nombre" required>
+             </div>
+             <div class="col">
+               <label class="form-label">Apellido/s</label>
+               <input type="text" class="form-control" placeholder="Escribe tu apellido" required>
+             </div>
+         </div>
+         <div class="row">
+            <div class="col">
+               <label for="exampleInputEmail1" class="form-label">E-mail</label>
+               <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com" required>
+             </div>
+            <div class="col">
+               <label class="form-label">Teléfono</label>
+               <input type="tel" class="form-control" placeholder="11111111111">
+             </div>
+         </div>
             <label class="datos__items">Servicio de interés</label>
-            <select>
+            <select class="form-select" aria-label="Default select example">
+               <option selected>Seleccionar</option>
                <option value="fotoproducto">Fotoproducto</option>
                <option value="publicidad">Publicidad</option>
                <option value="interaccion">Interacción con clientes</option>
             </select>
-            <label class="datos__items">Tu consulta</label>
-            <textarea placeholder="Dejanos un comentario"></textarea>
+         <div class="row">
+            <div class="col">
+               <label class="datos__items">Tu consulta</label>
+               <input type="text" class="form-control" placeholder="Dejanos un comentario"></input>
+            </div>
+         </div>
             <label class="datos__items">¿Desea recibir promociones por mail?</label>
             <input type="radio" id="si" name="promos">
             <label for="si">¡De acuerdo!</label>
             <input type="radio" id="no" name="promos">
             <label for="no">¡No, gracias!</label>
+            </br>
             <label class="datos__items">Acepto los términos y condiciones</label>
             <input type="checkbox">
             <br>
-            <input type="submit" placeholder="Enviar">
-            <input type="reset">
-         </fieldset>
+            <button type="submit" class="btn btn-secondary">Enviar</button>
+            <button type="submit" class="btn btn-secondary">Reestablecer</button>
        </form>
    </main>
    <footer class="footer"> 
@@ -97,5 +114,6 @@
         </ul>
       </nav>
    </footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 </body>
 </html>
