@@ -1,0 +1,20 @@
+/* Paleta de colores */
+$color-1: rgb(77, 88, 165);
+$color-2: rgb(157, 176, 206);
+$color-3: rgb(192, 211, 228);
+$color-4: rgb(239, 244, 248);
+$color-5: rgb(233, 194, 197);
+$color-6: rgb(206, 160, 170);
+$color-titulo: rgb(84, 89, 121);
+$color-borde: rgb(78, 121, 199);
+
+/*Funciones*/
+@mixin medidas($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin medidas-hover($width, $height) {
+    width: $width + 50px;
+    height: $height + 50px;
+}

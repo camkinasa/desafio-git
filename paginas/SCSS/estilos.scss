@@ -1,37 +1,33 @@
-/*Cambiar todo lo que pueda de unidades absolutas a relativas */
+@import "variables";
+@import "header-grid";
 
 body{
-    background-color: rgb(206, 160, 170);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: $color-6;
+    width: 100%;
 }
 
 .header{
     text-align: center;
-    background-image: linear-gradient(to right, rgb(206, 160, 170), rgb(233, 194, 197), rgb(239, 244, 248), rgb(192, 211, 228), rgb(157, 176, 206), rgb(77, 88, 165));
-}
-
-
-.header__logo{
-    height: 350px;
-    width: 800px;
-}
-
-.header__nav{
-    font-size:x-large;
-    height: 100px;
-    border-bottom: 2px solid rgb(78, 121, 199);
-}
-
-.header__nav ul li{
-    float: left;
-    list-style: none;
-    margin: 25px;
-}
-
-.header__nav ul li a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to right, $color-6, $color-5, $color-4, $color-3, $color-2, $color-1);
+    .header__logo{
+        height: 100%;
+        width: 100vh;
+    }
+    .header__nav{
+        font-size:x-large;
+        height: 100px;
+        ul li{
+            float: left;
+            list-style: none;
+            margin: 25px;
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: black;
+            }
+        }
+    }
 }
 
 .servicios__imagenes{
@@ -39,30 +35,28 @@ body{
     flex-direction: row;
     flex-wrap:wrap;
     justify-content: space-evenly;
-    width: 1350px;
 }
 
 .servicios__imagenes img{
-    width: 550px;
-    height: 550px;
+    @include medidas(550px, 550px);
     margin-bottom: 10%;
     transition: height 1s, width 1s;
 }
 
 .servicios__imagenes img:hover{
-    height: 600px; width: 600px;
+    @include medidas-hover(550px, 550px);
 }
 
 .servicios__imagenes--hola img{
     display: block;
-    width: 1180px;
+    @include medidas(1180px, 550px);
     margin-top: 5%;
     margin-bottom: 5%;
     transition: height 1s, width 1s;
 }
 
 .servicios__imagenes--hola img:hover{
-    width: 1250px;
+    @include medidas-hover(1180px, 550px);
 }
 
 .promos{
@@ -71,7 +65,7 @@ body{
 }
 
 .promos__tabla{
-    background-color: rgb(157, 176, 206);
+    background-color: $color-2;
     text-align: left;
     border-collapse: collapse;
     width: 100%;
@@ -80,7 +74,7 @@ body{
 }
 
 .promos__tabla__titulo{
-    color: rgb(84, 89, 121);
+    color: $color-titulo;
     font-size:xx-large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
@@ -96,18 +90,18 @@ body{
 }
 
 .promos__tabla__encabezados{
-    background-color: rgb(84, 89, 121);
+    background-color: $color-titulo;
     border-bottom: solid 5px black;
     color: white;
     text-transform: uppercase;
 }
 
 .promos__tabla__color{
-    background-color:rgb(192, 211, 228);
+    background-color: $color-3;
 }
 
 .recurso__titulo{
-    color: rgb(84, 89, 121);
+    color: $color-titulo;
     text-align: center;
     font-size:xx-large;
     text-transform: uppercase;
@@ -133,8 +127,8 @@ body{
 }
 
 .footer{
-    border-top: 2px solid rgb(78, 121, 199);
-    background-image: linear-gradient(to left, rgb(206, 160, 170), rgb(233, 194, 197), rgb(239, 244, 248), rgb(192, 211, 228), rgb(157, 176, 206), rgb(84, 89, 121));
+    border-top: 2px solid $color-borde;
+    background-image: linear-gradient(to right, $color-6, $color-5, $color-4, $color-3, $color-2, $color-1);
 }
 
 .footer__nav{
@@ -147,7 +141,7 @@ body{
     list-style: none;
     margin-left: 8%;
     margin-top: 7%;
-    color: rgb(111, 67, 180)
+   /* color: rgb(111, 67, 180)*/
 }
 
 .footer__nav ul li a{
@@ -186,13 +180,13 @@ body{
 .clientes__titulo{
     font-size: 80px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(77, 88, 165);
+    color: $color-1;
     text-align: center;
 }
 
 .clientes__identidad__subtitulo, .clientes__papeleria__subtitulo, .clientes__redes__subtitulo{
     font-size: 40px;
-    color: rgb(84, 89, 121);
+    color: $color-titulo;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 5%;
 }
@@ -207,16 +201,7 @@ body{
 
 /* Quienes somos */
 
-.grid{
-    display: grid;
-    grid-template-areas: 
-    "img somos somos" 
-    "section2 section2 section2" 
-    "footer footer footer";
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 2.5fr 1.5fr 1fr;
-    justify-content: space-around; /*no me lo lee*/
-}
+@import "quienes-somos-grid";
 
 .grid div{
     padding-left: 25px;
@@ -227,14 +212,13 @@ body{
 }
 
 .imagen{
-    grid-area: img;
     margin-top: 10%;
 }
 
 .texto__titulo{
     font-size:xx-large;
     font-family: sans-serif;
-    color: rgb(77, 88, 165);
+    color: $color-1;
 }
 
 .letra{
@@ -244,17 +228,9 @@ body{
 }
 
 .texto1{
-    grid-area: somos;
     margin-top: 10%;
 }
 
-.texto2{
-    grid-area: section2;
-}
-
-.footer{
-    grid-area: footer;
-}
 
 /* Contacto 
 
