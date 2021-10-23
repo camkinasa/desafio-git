@@ -122,8 +122,7 @@ body{
 .recurso__enlace{
     font-size: x-large;
     font-family:sans-serif;
-    margin-left: 40%;
-    margin-bottom: 10%;
+    display: block;
 }
 
 .footer{
@@ -141,7 +140,6 @@ body{
     list-style: none;
     margin-left: 8%;
     margin-top: 7%;
-   /* color: rgb(111, 67, 180)*/
 }
 
 .footer__nav ul li a{
