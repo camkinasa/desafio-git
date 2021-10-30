@@ -36,33 +36,11 @@ body {
         text-transform: uppercase;
         color: black; }
 
-.servicios__imagenes {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly; }
+.slide {
+  margin-top: 10px; }
 
-.servicios__imagenes img {
-  width: 550px;
-  height: 550px;
-  margin-bottom: 10%;
-  transition: height 1s, width 1s; }
-
-.servicios__imagenes img:hover {
-  width: 600px;
-  height: 600px; }
-
-.servicios__imagenes--hola img {
-  display: block;
-  width: 1180px;
-  height: 550px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  transition: height 1s, width 1s; }
-
-.servicios__imagenes--hola img:hover {
-  width: 1230px;
-  height: 600px; }
+.slide img {
+  height: 100vh; }
 
 .promos {
   margin: 5%;

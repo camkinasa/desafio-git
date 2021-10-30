@@ -30,33 +30,12 @@ body{
     }
 }
 
-.servicios__imagenes{
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: space-evenly;
+.slide{
+    margin-top: 10px;
 }
 
-.servicios__imagenes img{
-    @include medidas(550px, 550px);
-    margin-bottom: 10%;
-    transition: height 1s, width 1s;
-}
-
-.servicios__imagenes img:hover{
-    @include medidas-hover(550px, 550px);
-}
-
-.servicios__imagenes--hola img{
-    display: block;
-    @include medidas(1180px, 550px);
-    margin-top: 5%;
-    margin-bottom: 5%;
-    transition: height 1s, width 1s;
-}
-
-.servicios__imagenes--hola img:hover{
-    @include medidas-hover(1180px, 550px);
+.slide img{
+    height: 100vh;
 }
 
 .promos{
