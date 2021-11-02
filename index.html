@@ -45,36 +45,34 @@
          </nav>
        </header>
      <main>
-      <div id="carouselIndex" class="carousel slide" data-ride="carousel">
-         <ol class="carousel-indicators">
-           <li data-target="#carouselIndex" data-slide-to="0" class="active"></li>
-           <li data-target="#carouselIndex" data-slide-to="1"></li>
-           <li data-target="#carouselIndex" data-slide-to="2"></li>
-           <li data-target="#carouselIndex" data-slide-to="3"></li>
-         </ol>
-         <div class="carousel-inner">
-           <div class="carousel-item active">
-             <img class="d-block w-100" src="paginas/imagenes/servicio-diseno.jpg" alt="Diseño">
-           </div>
-           <div class="carousel-item">
-             <img class="d-block w-100" src="paginas/imagenes/promo.png" alt="Promo">
-           </div>
-           <div class="carousel-item">
-             <img class="d-block w-100" src="paginas/imagenes/papeleria.png" alt="Papeleria">
-           </div>
-           <div class="carousel-item">
-             <img class="d-block w-100" src="paginas/imagenes/historias.png" alt="Historias">
-           </div>
-         </div>
-         <a class="carousel-control-prev" href="#carouselIndex" role="button" data-slide="prev">
-           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-           <span class="sr-only">Anterior</span>
-         </a>
-         <a class="carousel-control-next" href="#carouselIndex" role="button" data-slide="next">
-           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-           <span class="sr-only">Siguiente</span>
-         </a>
-       </div>
+        <div class="container-fluid">
+         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./paginas/imagenes/hola.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./paginas/imagenes/papeleria.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./paginas/imagenes/servicio-diseno.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
       <section class="promos">
          <h2 class="promos__tabla__titulo">Packs de servicios</h2>
          <table class="promos__tabla">
@@ -132,38 +130,45 @@
         <h2 class="recurso__titulo">¡Recurso gratuito!</h2>
         <div class="row mt-5">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <img class="recurso__imagen" src="paginas/imagenes/recurso-gratuito.jpg" alt="Recurso gratuito" title="Calendario emprendedores">
+               <a href="https://drive.google.com/file/d/1tOETl7Ub-kdt8RjL4rV_1Lkx-HSv26m5/view">
+                  <img class="recurso__imagen" src="paginas/imagenes/recurso-gratuito.jpg" alt="Recurso gratuito" title="Calendario emprendedores">
+               </a>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <p class="recurso__texto">¡Aprovecha el calendario con fechas especiales para planificar tus posts! ¡Más de 50 eventos nacionales, internacionales y mundiales en más de 10 rubros para generar contenido! ¡Incluye tips para aplicar tus fechas!
+            <p class="recurso__texto">¡Aprovecha el calendario con fechas especiales para planificar tus posts! ¡Más de 50 eventos nacionales, internacionales y mundiales en más de 10 rubros para generar contenido! ¡Incluye tips para aplicar tus fechas! Podés descargarlo haciendo click en la imagen.
             </p>
             </div>
-            <a href="https://drive.google.com/file/d/1tOETl7Ub-kdt8RjL4rV_1Lkx-HSv26m5/view" class="recurso__enlace">¡Descargalo aquí!</a>
         </div>
        </div>
      </main>
-     <footer class="footer"> 
+     <footer class="footer container-fluid">
+        <h3 class="footer__texto">¡Encontranos también en nuestras redes sociales!</h3> 
         <nav class="footer__nav">
             <ul>
                <li>
-               <a href="https://www.instagram.com/serendipia.redes/">Instagram</a>
+               <a href="https://www.instagram.com/serendipia.redes/">
+               <img class="instagram" src="./paginas/imagenes/instagram.png" alt="instagram">
+               </a>
                </li>
                <li>
-               <a href="https://campsite.bio/serendipiaredes">Campsite</a>
-               </li>
-               <li>
-               <a href="https://www.behance.net/ornella-rossi">Behance</a>
+               <a href="https://www.behance.net/ornella-rossi">
+               <img class="behance" src="./paginas/imagenes/behance.png" alt="Behance">
+               </a>
               </li>
                <li>
-               <a href="https://ar.pinterest.com/lospinsdeserendipia/">Pinterest</a>
+               <a href="https://ar.pinterest.com/lospinsdeserendipia/">
+               <img class="Pinterest" src="./paginas/imagenes/pinterest.png" alt="Pinterest">
+               </a>
                </li>
                <li>
-               <a href="https://www.facebook.com/serendipiamktdigital">Facebook</a>
+               <a href="https://www.facebook.com/serendipiamktdigital">
+               <img class="Facebook" src="./paginas/imagenes/facebook.png" alt="Facebook">
+               </a>
                </li>
           </ul>
         </nav>
      </footer>
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>     
     </body>
 </html>

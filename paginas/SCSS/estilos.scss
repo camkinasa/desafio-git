@@ -2,14 +2,13 @@
 @import "header-grid";
 
 body{
-    background-color: $color-6;
+    background-image: linear-gradient(to bottom, $color-6, $color-5, $color-4, $color-3, $color-2, $color-1);
     width: 100%;
 }
 
 .header{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: linear-gradient(to right, $color-6, $color-5, $color-4, $color-3, $color-2, $color-1);
     .header__logo{
         height: 100%;
         width: 100vh;
@@ -25,6 +24,10 @@ body{
                 text-decoration: none;
                 text-transform: uppercase;
                 color: black;
+                transition: color .4;
+            }
+            a:hover{
+                color: $color-4;
             }
         }
     }
@@ -60,14 +63,11 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
+    margin-top: 10%
 }
 
 .promos__tabla th, td{
     padding: 20px;
-}
-
-.promos__tabla td:hover{
-    padding: 30px;
 }
 
 .promos__tabla__encabezados{
@@ -88,16 +88,12 @@ body{
     text-transform: uppercase;
 }
 
-.recurso__imagen img{
-    width: 400px;
-}
-
 .recurso__texto{
-    display: inline-block;
     font-size:x-large;
     width: 80%;
     margin-left: 10%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10%;
 }
 
 .recurso__enlace{
@@ -107,27 +103,24 @@ body{
     padding: 1%;
 }
 
-.footer{
-    border-top: 2px solid $color-borde;
-    background-image: linear-gradient(to right, $color-6, $color-5, $color-4, $color-3, $color-2, $color-1);
-}
-
-.footer__nav{
-    font-size:x-large;
-    height: 200px;
+.footer__nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .footer__nav ul li{
     float:left;
     list-style: none;
-    margin-left: 8%;
-    margin-top: 7%;
 }
 
-.footer__nav ul li a{
-    text-decoration: none;
+.footer__texto{
+    text-align: center;
+    color: $color-4;
     text-transform: uppercase;
-    color: black;
+    font-size: larger;
+    padding-top: 5%;
+    padding-bottom: 2.5%;
 }
 
 /*Servicios y promociones*/
@@ -212,26 +205,9 @@ body{
 }
 
 
-/* Contacto 
-
-.datos{
-    margin: 10%;
-}
-
-.datos__titulo{
-    font-size:xx-large;
-}
-
-.datos__items{
-    display: block;
-}*/
+/* Contacto */
 
 .contacto__main{
-    background-color: #cea0aa;
-    opacity: 0.7;
-    background-image:  radial-gradient(#e9c2c5 0.9px, transparent 0.9px), radial-gradient(#e9c2c5 0.9px, #cea0aa 0.9px);
-    background-size: 36px 36px;
-    background-position: 0 0,18px 18px;
     display: flex;
     min-height: 100vh;
 }
