@@ -7,9 +7,3 @@ $color-5: rgb(233, 194, 197);
 $color-6: rgb(206, 160, 170);
 $color-titulo: rgb(84, 89, 121);
 $color-borde: rgb(78, 121, 199);
-
-/*Funciones*/
-@mixin medidas($width, $height) {
-    width: $width;
-    height: $height;
-}

@@ -11,68 +11,92 @@
     <link rel="stylesheet" href="CSS/estilos.css"/>
 </head>
 <body>
-    <header class="header">
-        <img class="header__logo" src="imagenes/logo.png" alt="logo" title="serendipia"> 
-        <nav class="header__nav">
-            <ul>
-               <li>
-                  <a href="../index.html">
-                     Inicio
-                  </a> 
-               </li>
-               <li>
-                  <a href="servicios-promociones.html">
-                     Servicios & Promociones
-                  </a>
-               </li>
-               <li>
-                  <a href="nuestros-clientes.html">
-                     Nuestros Clientes
-                  </a>
-               </li>
-               <li>
-                  <a href="quienes-somos.html">
-                     Quienes Somos
-                  </a>
-               </li>
-               <li>
-                  <a href="contacto.html">
-                     Contacto
-                  </a>
-               </li>
-            </ul> 
-         </nav>
+   <header class="header container-fluid"> 
+      <img class="header__logo" src="imagenes/logo.png" alt="logo" title="serendipia">
     </header>
+      <nav class="navbar navbar-expand-lg" id="header__nav">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="#">Menú</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="container-fluid justify-content-center navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="servicios-promociones.html">Servicios & Promociones</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="nuestros-clientes.html">Nuestros Clientes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="quienes-somos.html">Quienes somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+             </ul>
+           </div>
+         </div>
+       </nav>
     <main>
-        <section class="clientes">
-           <h1 class="clientes__titulo">Tentaciones Clota</h1>
-           <h2 class="clientes__identidad__subtitulo">Identidad</h2>
-            <article class="clientes__identidad">
+        <section class="clientes container">
+          <div class="row">
+           <h2 class="clientes__subtitulo">Identidad</h2>
+          </div>
+            <article class="clientes__identidad row">
+              <div class="col">
                <img src="imagenes/clota-identidad.png" alt="logo-cliente" title="logo">
-               <p class="clientes__identidad__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque veritatis totam consequatur iure ipsum, at repudiandae quae. Repellat asperiores libero, ipsam amet inventore sed voluptas repudiandae minima, quas assumenda quibusdam?
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique autem sint optio libero aperiam eaque provident nam at nemo molestias enim assumenda voluptatum, beatae asperiores perferendis a iure! Ullam, recusandae?
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et ipsa delectus nostrum fuga, at maxime asperiores tempora quisquam fugit qui possimus temporibus doloremque voluptas veniam libero animi ab hic ea.
+              </div>
+              <div class="col">
+               <p class="clientes__texto">
+                  Alcanzar el éxito en tu emprendimiento no solo se trata de destacar en redes, sino también de llevar la identidad un poco más allá.
+                  Es por eso que ofrecemos servicios incluyendo formatos personalizados digitales y listos para imprimir.
+                  ¡Nos acompañarlos en sus proyectos, sobre todo si se trata de rubros que nunca trabajamos antes! ¡Aprender mientras creás es de lo más divertido del proceso!
                </p>
+              </div>
             </article>
-            <h2 class="clientes__papeleria__subtitulo">Papelería</h2>
-            <article class="clientes__papeleria">
+            <div class="row mt-5">
+            <h2 class="clientes__subtitulo">Papelería</h2>
+            </div>
+            <article class="clientes__papeleria row">
+              <div class="col">
                <img src="imagenes/clota2.png" alt="papeleria" title="papeleria">
+              </div>
+              <div class="col">
                <img src="imagenes/clota3.png" alt="papeleria" title="papeleria">
-               <p class="clientes__papeleria__texto">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga cumque consequatur est exercitationem ad laborum voluptate, illo neque nihil tenetur iste placeat. Consequatur tenetur veritatis quidem provident maiores aut ullam?
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aut ratione necessitatibus magnam. Adipisci, quisquam ullam. Repellat facilis quia cum maiores aspernatur cumque, eos quasi hic impedit fugit culpa nostrum?
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum eveniet, quibusdam suscipit sunt placeat porro nesciunt possimus, vero nisi unde distinctio velit corporis enim facilis nemo consequatur ipsa nobis.
+              </div>
+              <div class="row">
+               <p class="clientes__texto mt-5">
+                   ¡Diseñamos de todo! ¡Y nos adaptamos a las necesidades del cliente! En este caso hicimos: 
                </p>
+               <ul>
+                  <li>Tarjetas para regalos de cumpleaños</li>
+                  <li>Tarjetas para regalo del día del padre</li>
+                  <li>Identificadores para cupcakes</li>
+                  <li>Stickers varios para bolsas, cajas de catering y viandas</li>
+                  <li>¡Y mucho más!</li>
+                </ul>
+              </div>
             </article>
-            <h2 class="clientes__redes__subtitulo">Gestión de redes</h2>
-            <article class="clientes__redes">
+            <div class="row">
+            <h2 class="clientes__subtitulo">Gestión de redes</h2>
+            </div>
+            <article class="clientes__redes row">
+              <div class="col">
                <img src="imagenes/clota-redes.png" alt="community-manager" title="comunity manager">
-               <img src="imagenes/historias.png" alt="historias" title="historias de instagram">
-               <p class="clientes__redes__texto">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est veniam, omnis nulla, itaque, tempora deleniti quo beatae provident excepturi officiis rerum? Asperiores eligendi delectus facere perspiciatis a. Sint, nulla expedita?
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur hic molestiae corrupti delectus illum, suscipit reiciendis ab eligendi omnis cumque quidem, ducimus error, possimus distinctio quae. Placeat voluptatem impedit deleniti.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est praesentium deleniti amet ab laboriosam minus sequi modi quis enim ut ipsa facilis, suscipit at distinctio iste, harum repellat odio fugiat?
+              </div>
+              <div class="col">
+               <img src="imagenes/clota-historias.png" alt="historias" title="historias de instagram">
+              </div>
+              <div class="row">
+               <p class="clientes__texto mt-5">
+                  Ademas gestionamos las redes y programamos su contenido: hacemos rediseño de identidad y del perfil (logo, historias destacadas, redacción de bio, creación de árbol de links).
+                  ¡Tenemos mucha expeciencia en gestión de redes! ¡Podés seguirnos para encontrar tips sobre cómo aprovechar mejor Facebook business, Google ads, y demás!
                </p>
+              </div>
             </article>
         </section>
     </main>

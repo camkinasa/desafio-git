@@ -12,62 +12,61 @@
     <link rel="stylesheet" href="CSS/estilos.css"/>
 </head>
 <body>
-    <header class="header">
-        <img class="header__logo" src="imagenes/logo.png" alt="logo" title="serendipia">
-        <nav class="header__nav">
-         <ul>
-            <li>
-               <a href="../index.html">
-                  Inicio
-               </a> 
-            </li>
-            <li>
-               <a href="servicios-promociones.html">
-                  Servicios & Promociones
-               </a>
-            </li>
-            <li>
-               <a href="nuestros-clientes.html">
-                  Nuestros Clientes
-               </a>
-            </li>
-            <li>
-               <a href="quienes-somos.html">
-                  Quienes Somos
-               </a>
-            </li>
-            <li>
-               <a href="contacto.html">
-                  Contacto
-               </a>
-            </li>
-         </ul> 
-      </nav> 
+   <header class="header container-fluid"> 
+      <img class="header__logo" src="imagenes/logo.png" alt="logo" title="serendipia">
     </header>
-    <body>
-   <div class="grid">
-             <div class="imagen">
-               <img src="imagenes/hola.png" alt="hola" title="hola">
-             </div>
-             <div class="texto1">
-                <h2 class="texto__titulo">Quienes somos</h2>
-               <p class="letra">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi temporibus odio, id repellat quaerat sequi fuga impedit, iusto at, ullam ea corrupti soluta voluptatem sapiente quibusdam. Praesentium recusandae eaque tenetur.
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto nisi, vitae quae doloremque sint explicabo voluptatibus natus minima voluptatum placeat debitis, sapiente autem hic ipsum labore alias eos fugiat.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, facere inventore aut magni veritatis magnam natus dolorem assumenda corrupti voluptate ipsum iste? Debitis reiciendis accusantium aperiam at dolorum nemo corrupti.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolor fuga numquam fugiat autem repellendus quidem reiciendis harum! Ab laboriosam consequatur minus autem fuga voluptatum doloremque nesciunt neque quisquam iure?
-               </p>
-             </div>
-             <div class="texto2">
-                <h2 class="texto__titulo">Nuestro equipo de trabajo</h2>
-               <p class="letra">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error earum ducimus quam quaerat quas fugit? Tempore reprehenderit tempora perspiciatis, voluptates dolores perferendis, voluptate nihil nulla delectus nam cumque totam.
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam at atque fugiat eius, accusamus asperiores voluptatum minima alias a voluptatem distinctio quibusdam laudantium, odio nisi libero possimus sit inventore architecto!
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos alias delectus eaque! Beatae iusto magni dignissimos incidunt quia autem vel in, similique porro saepe sapiente dolore quas veniam maiores aut.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tenetur fugit sint libero quasi nobis consequuntur placeat earum labore architecto! Soluta inventore numquam nesciunt quae iusto suscipit placeat quisquam cupiditate!
-                </p>
-             </div>
-            </body>
+      <nav class="navbar navbar-expand-lg" id="header__nav">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="#">Menú</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="container-fluid justify-content-center navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="servicios-promociones.html">Servicios & Promociones</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="nuestros-clientes.html">Nuestros Clientes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="quienes-somos.html">Quienes somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+             </ul>
+           </div>
+         </div>
+       </nav>
+             <div class="container texto1 mt-5">
+                <div class="row">
+                   <div class="col">
+                      <img src="./imagenes/hola.png" class="imagen">
+                   </div>
+                   <div class="col">
+                      <p class="letra">Bienvenidxs a mi nuevo espacio! Un espacio al que llegué con muchos nervios y también un poco de sorpresa. Y es que hago tantas cosas variadas, que no podía terminar de decidirme cómo presentarlas. Pero voy a hacer el intento.</p>
+                   </div>
+                </div>
+                <div class="row mt-5">
+                   <div class="col">
+                       <h5 class="texto__titulo">¿Quién soy?</h5>
+                        <p class="letra">Me llamo Ornella y estudio Producción Audiovisual desde 2016, pero si hay algo que me di cuenta es que no me caracterizo por encasillarme en cosas muy limitadas: Amo planificar y organizar todo, escribir, pintar, la música, el diseño, las cosas bonitas... Digamos que en lo que se me presente, la necesidad de creatividad es una constante.</p>
+                   </div>
+                   <div class="col">
+                     <img src="./imagenes/Ornella.jpg" class="imagen">
+                  </div>
+                  </div>
+                  <div class="row mt-5 texto2">
+                     <h2 class="texto__titulo">¿Qué es Serendipia?</h2>
+                    <p class="letra">
+                       Según el diccionario, es "un hallazgo valioso que se produce de manera accidental o casual": cuando encontrás algo de forma inesperada o mientras buscás una cosa distinta.
+                       Personalmente, esto es lo que me pasó a mí con el mundo de las redes desde inicios de pandemia, cuando se interrumpió mi actividad habitual y me vi obligada a cambiar el rumbo. A partir de entonces estoy formándome y dedicándole todo para crecer
+                     </p>
+               </div>
             <footer class="footer container-fluid">
                <h3 class="footer__texto">¡Encontranos también en nuestras redes sociales!</h3> 
                <nav class="footer__nav">
@@ -96,5 +95,7 @@
                </nav>
             </footer>
    </div>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>     
 </body>
 </html>

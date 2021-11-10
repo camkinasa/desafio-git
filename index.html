@@ -12,38 +12,36 @@
         <link rel="stylesheet" href="paginas/CSS/estilos.css" />
     </head>
     <body>
-       <header class="header"> 
-         <img class="header__logo" src="paginas/imagenes/logo.png" alt="logo" title="serendipia"> 
-         <nav class="header__nav">
-            <ul>
-               <li>
-                  <a href="index.html">
-                     Inicio
-                  </a> 
-               </li>
-               <li>
-                  <a href="paginas/servicios-promociones.html">
-                     Servicios & Promociones
-                  </a>
-               </li>
-               <li>
-                  <a href="paginas/nuestros-clientes.html">
-                     Nuestros Clientes
-                  </a>
-               </li>
-               <li>
-                  <a href="paginas/quienes-somos.html">
-                     Quienes Somos
-                  </a>
-               </li>
-               <li>
-                  <a href="paginas/contacto.html">
-                     Contacto
-                  </a>
-               </li>
-            </ul> 
-         </nav>
+       <header class="header container-fluid"> 
+         <img class="header__logo" src="paginas/imagenes/logo.png" alt="logo" title="serendipia">
        </header>
+         <nav class="navbar navbar-expand-lg" id="header__nav">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Menú</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="container-fluid justify-content-center navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/servicios-promociones.html">Servicios & Promociones</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="./paginas/nuestros-clientes.html">Nuestros Clientes</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="./paginas/quienes-somos.html">Quienes somos</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+                   </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
      <main>
         <div class="container-fluid">
          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -54,13 +52,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./paginas/imagenes/hola.png" class="d-block w-100" alt="...">
+                <img src="./paginas/imagenes/servicio-diseno.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
                 <img src="./paginas/imagenes/papeleria.png" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="./paginas/imagenes/servicio-diseno.jpg" class="d-block w-100" alt="...">
+                <img src="./paginas/imagenes/historias.png" class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -74,7 +72,7 @@
           </div>
         </div>
       <section class="promos">
-         <h2 class="promos__tabla__titulo">Packs de servicios</h2>
+         <h2 class="promos__tabla__titulo mt-5">¡Planes para gestionar tus redes sociales!</h2>
          <table class="promos__tabla">
             <tr class="promos__tabla__encabezados">
                <th>Servicios</th>
@@ -129,12 +127,12 @@
        <div class="container">
         <h2 class="recurso__titulo">¡Recurso gratuito!</h2>
         <div class="row mt-5">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="col">
                <a href="https://drive.google.com/file/d/1tOETl7Ub-kdt8RjL4rV_1Lkx-HSv26m5/view">
                   <img class="recurso__imagen" src="paginas/imagenes/recurso-gratuito.jpg" alt="Recurso gratuito" title="Calendario emprendedores">
                </a>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="col">
             <p class="recurso__texto">¡Aprovecha el calendario con fechas especiales para planificar tus posts! ¡Más de 50 eventos nacionales, internacionales y mundiales en más de 10 rubros para generar contenido! ¡Incluye tips para aplicar tus fechas! Podés descargarlo haciendo click en la imagen.
             </p>
             </div>

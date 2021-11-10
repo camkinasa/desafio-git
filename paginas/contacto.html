@@ -12,45 +12,43 @@
     <link rel="stylesheet" href="CSS/estilos.css"/>
 </head>
 <body>
-   <header class="header">
-         <img class="header__logo" src="imagenes/logo.png" alt="logo" title="serendipia"> 
-       <nav class="header__nav">
-        <ul>
-           <li>
-              <a href="../index.html">
-                 Inicio
-              </a> 
-           </li>
-           <li>
-              <a href="servicios-promociones.html">
-                 Servicios & Promociones
-              </a>
-           </li>
-           <li>
-              <a href="nuestros-clientes.html">
-                 Nuestros Clientes
-              </a>
-           </li>
-           <li>
-              <a href="quienes-somos.html">
-                 Quienes Somos
-              </a>
-           </li>
-           <li>
-              <a href="contacto.html">
-                 Contacto
-              </a>
-           </li>
-        </ul> 
+   <header class="header container-fluid"> 
+      <img class="header__logo" src="imagenes/logo.png" alt="logo" title="serendipia">
+    </header>
+      <nav class="navbar navbar-expand-lg" id="header__nav">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="#">Menú</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="container-fluid justify-content-center navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="servicios-promociones.html">Servicios & Promociones</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="nuestros-clientes.html">Nuestros Clientes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="quienes-somos.html">Quienes somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+             </ul>
+           </div>
+         </div>
        </nav>
-   </header> 
-   <main class="contacto__main container-fluid">
-      <div class="row">
-        <h1 class="datos__titulo">
-            Datos de contacto
-        </h1>
-       </div>
+   <main class="contacto__main container">
        <form class="datos" method="POST" enctype="text/plain">
+        <div class="row">
+          <h2 class="datos__titulo">
+              ¡Contactate con nosotros!
+          </h2>
+         </div>
          <div class="row">
             <div class="col">
                <label class="form-label">Nombre/s</label>
@@ -79,12 +77,13 @@
                <option value="interaccion">Interacción con clientes</option>
             </select>
          <div class="row">
-            <div class="col">
+           <div class="col">
                <label class="datos__items">Tu consulta</label>
                <input type="text" class="form-control" placeholder="Dejanos un comentario"></input>
             </div>
          </div>
             <label class="datos__items">¿Desea recibir promociones por mail?</label>
+            <br>
             <input type="radio" id="si" name="promos">
             <label for="si">¡De acuerdo!</label>
             <input type="radio" id="no" name="promos">
@@ -92,7 +91,7 @@
             </br>
             <label class="datos__items">Acepto los términos y condiciones</label>
             <input type="checkbox">
-            <br>
+            </br>
             <button type="submit" class="btn btn-secondary">Enviar</button>
             <button type="submit" class="btn btn-secondary">Reestablecer</button>
        </form>

@@ -1,18 +1,4 @@
 /* Paleta de colores */
-/*Funciones*/
-.header {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 75% 25%;
-  grid-template-areas: "logo logo logo logo logo" "nav nav nav nav nav";
-  justify-items: center; }
-
-.header__logo {
-  grid-area: logo; }
-
-.header__nav {
-  grid-area: nav; }
-
 body {
   background-image: linear-gradient(to bottom, #cea0aa, #e9c2c5, #eff4f8, #c0d3e4, #9db0ce, #4d58a5);
   width: 100%; }
@@ -23,20 +9,20 @@ body {
   .header .header__logo {
     height: 100%;
     width: 100vh; }
-  .header .header__nav {
-    font-size: x-large;
-    height: 100px; }
-    .header .header__nav ul li {
-      float: left;
-      list-style: none;
-      margin: 25px; }
-      .header .header__nav ul li a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: black;
-        transition: color .4; }
-      .header .header__nav ul li a:hover {
-        color: #eff4f8; }
+
+#header__nav {
+  font-size: x-large; }
+  #header__nav div ul li {
+    float: left;
+    list-style: none;
+    margin: 1%; }
+    #header__nav div ul li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: black;
+      transition: color .4; }
+    #header__nav div ul li a:hover {
+      color: #eff4f8; }
 
 .slide {
   margin-top: 5%;
@@ -47,8 +33,9 @@ body {
   height: 75vh; }
 
 .promos {
-  margin: 5%;
-  width: 90%; }
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%; }
 
 .promos__tabla {
   background-color: #9db0ce;
@@ -63,8 +50,7 @@ body {
   font-size: xx-large;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-transform: uppercase;
-  text-align: center;
-  margin-top: 10%; }
+  text-align: center; }
 
 .promos__tabla th, td {
   padding: 20px; }
@@ -121,66 +107,27 @@ body {
 
 /*Nuestros clientes*/
 .clientes img {
-  width: 400px;
-  margin-left: 50px; }
+  max-width: 400px; }
 
-.clientes__identidad {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap; }
-
-.clientes__papeleria, .clientes__redes {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-
-.clientes__titulo {
-  font-size: 80px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #4d58a5;
-  text-align: center; }
-
-.clientes__identidad__subtitulo, .clientes__papeleria__subtitulo, .clientes__redes__subtitulo {
-  font-size: 40px;
+.clientes__subtitulo {
+  font-size: 50px;
   color: #545979;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 5%; }
 
-.clientes__identidad__texto, .clientes__papeleria__texto, .clientes__redes__texto {
-  display: inline;
+.clientes__texto {
   font-family: sans-serif;
   font-size: x-large;
   padding-left: 20px;
   padding-right: 20px; }
 
+.clientes__papeleria ul li {
+  font-family: sans-serif;
+  font-size: x-large; }
+
 /* Quienes somos */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(5, 2fr);
-  grid-template-rows: 3fr 1.5fr 1fr;
-  grid-template-areas: "img somos somos somos somos"  "section2 section2 section2 section2 section2"  "footer footer footer footer footer"; }
-
 .imagen {
-  grid-area: img; }
-
-.texto1 {
-  grid-area: somos; }
-
-.texto2 {
-  grid-area: section2; }
-
-.footer {
-  grid-area: footer; }
-
-.grid div {
-  padding-left: 25px; }
-
-.imagen img {
-  width: 450px; }
-
-.imagen {
-  margin-top: 10%; }
+  max-width: 450px; }
 
 .texto__titulo {
   font-size: xx-large;
@@ -192,13 +139,11 @@ body {
   padding-right: 25px;
   font-family: Georgia, 'Times New Roman', Times, serif; }
 
-.texto1 {
-  margin-top: 10%; }
-
 /* Contacto */
 .contacto__main {
   display: flex;
-  min-height: 100vh; }
+  min-height: 100vh;
+  justify-content: center; }
 
 form {
   width: 80%;
@@ -208,5 +153,4 @@ form {
 .datos__titulo {
   font-size: xx-large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 5%;
-  text-align: center; }
+  margin-top: 5%; }
